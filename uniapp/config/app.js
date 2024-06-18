@@ -11,9 +11,9 @@ const IS_H5 = false
 /** S API BaseURL **/
 const baseURLMap = {
 	// 开发环境 
-	development: 'http://likeshopb2cos.yixiangonline.com/api/',
+	development: 'http://127.0.0.1:20208/api',
 	// 生产环境
-	production: IS_H5 ? location.origin +'/api/' : 'http://likeshopb2cos.yixiangonline.com/api/',
+	production: IS_H5 ? location.origin +'/api/' : 'http://127.0.0.1:20208/api',
 }
 
 const baseURL = baseURLMap[process.env.NODE_ENV]
